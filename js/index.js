@@ -96,9 +96,6 @@ var app = angular
                 audio.currentTime = 0.01;
               }
               audio.play();
-              gtag('event', 'button_play', {
-              'event_label': button.title
-            });
               button.paused = false;
             }
             else { // Track is playing
@@ -118,9 +115,6 @@ var app = angular
             audio.loop = typeof repeat !== 'undefined' && repeat;
 
             audio.play();
-            gtag('event', 'button_play', {
-              'event_label': button.title
-            });
           }
         }
       };
